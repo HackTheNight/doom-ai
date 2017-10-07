@@ -8,10 +8,15 @@ game = DoomGame()
 game.load_config("./custom-basic.cfg")
 game.init()
 
-shoot = [0, 0, 1]
-left = [1, 0, 0]
-right = [0, 1, 0]
-actions = [shoot, left, right]
+shoot = [1, 0, 0, 0, 0, 0, 0, 0]
+left = [0, 1, 0, 0, 0, 0, 0, 0]
+right = [0, 0, 1, 0, 0, 0, 0, 0]
+forward = [0, 0, 0, 1, 0, 0, 0, 0]
+backward = [0, 0, 0, 0, 1, 0, 0, 0]
+turn_left = [0, 0, 0, 0, 0, 1, 0, 0]
+turn_right = [0, 0, 0, 0, 0, 0, 1, 0]
+jump = [0, 0, 0, 0, 0, 0, 0, 1]
+actions = [shoot, left, right, forward, backward, turn_left, turn_right, jump]
 
 episodes = 10
 for i in range(episodes):
