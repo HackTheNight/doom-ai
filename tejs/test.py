@@ -5,7 +5,7 @@ import random
 import time
 
 game = DoomGame()
-game.load_config("scenario-configs/basic.cfg")
+game.load_config("./custom-basic.cfg")
 game.init()
 
 shoot = [0, 0, 1]

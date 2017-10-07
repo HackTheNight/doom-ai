@@ -6,7 +6,9 @@ A programming to build a Doom AI
 ````bash
 git clone https://github.com/HackTheNight/doom-ai.git
 cd doom-ai/
-git clone https://github.com/mwydmuch/ViZDoom.git
+sudo pip2.7 install numpy vizdoom
+python test.py
+#git clone https://github.com/mwydmuch/ViZDoom.git
 ````
 
 
