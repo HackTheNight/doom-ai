@@ -5,15 +5,17 @@ import random
 import time
 
 game = DoomGame()
-game.load_config(".scenario-configs/Alectronic/alec.cfg")
+game.load_config("./Alectronic/alec.cfg")
 game.init()
 
-shoot = [0, 0, 1]
-left = [1, 0, 0]
-right = [0, 1, 0]
-actions = [shoot, left, right]
+shoot = [1, 1, 1, 1, 1]
+left = [1, 0, 0, 0, 0]
+right = [0, 1, 0, 0, 0]
+forward = [0, 0, 0, 1, 0]
+backward = [0, 0, 0, 0, 1]
+actions = [shoot, left, right,forward,backward]
 
-episodes = 10
+episodes = 100
 for i in range(episodes):
     game.new_episode()
     while not game.is_episode_finished():
