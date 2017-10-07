@@ -6,6 +6,7 @@ A programming to build a Doom AI
 ````bash
 git clone https://github.com/HackTheNight/doom-ai.git
 cd doom-ai/
+git clone https://github.com/mwydmuch/ViZDoom.git
 ````
 
 
