@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-from vizdoom import *
+from vizdoom import DoomGame
 import random
 import time
 
 game = DoomGame()
-game.load_config("ViZDoom/scenarios/basic.cfg")
+game.load_config("./basic.cfg")
 game.init()
 
 shoot = [0, 0, 1]
@@ -21,7 +21,7 @@ for i in range(episodes):
         img = state.screen_buffer
         misc = state.game_variables
         reward = game.make_action(random.choice(actions))
-        print "\treward:", reward
+        print("reward:", reward)
         time.sleep(0.02)
-    print "Result:", game.get_total_reward()
+    print("Result:", game.get_total_reward())
     time.sleep(2)
