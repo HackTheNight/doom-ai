@@ -4,7 +4,7 @@ chardet==3.0.4
 cmake==0.8.0
 idna==2.6
 Mastodon.py==1.1.1
-numpy==1.13.3
+numpy==1.22.0
 python-dateutil==2.6.1
 pytz==2017.2
 requests==2.18.4
